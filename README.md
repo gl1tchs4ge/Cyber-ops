@@ -22,9 +22,9 @@ This repo focuses on hands-on learning through platforms like Hack The Box, stru
 
 At the moment, my learning is centered on:
 
-- Hack The Box (HTB) platform practice
-- Linux and command-line proficiency
-- Security methodology and structured thinking
+- Coding (Python and C)
+- Linux and command-line proficiency (bash)
+- Hacker Mindset
 
 ---
 
