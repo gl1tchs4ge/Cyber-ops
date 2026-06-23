@@ -8,7 +8,7 @@ This repo focuses on hands-on learning through platforms like Hack The Box, stru
 
 ## About Me
 
-- 15-year-old tech enthusiast
+- 14-year-old tech enthusiast
 - Focused on cybersecurity and systems engineering
 - Interests:
   - Ethical hacking (offensive + defensive security)
@@ -31,31 +31,32 @@ At the moment, my learning is centered on:
 
 ## Repository Structure
 
-### `notes/`
+### `Notes/`
 Technical knowledge base and reference material:
 - Linux concepts and commands
 - Networking fundamentals
 - Security theory
 - Tool references
 
-### `security/`
+### `Writeups/`
 Hands-on cybersecurity practice:
 - `htb/` → Hack The Box machines and challenges
+- `overthewire/` → Overthewire Wargames
 - `pentesting/` → general penetration testing techniques
 - `blue-team/` → defensive security concepts
 - `methodology/` → structured approaches and workflows
 
 
-### `labs/`
+### `Labs/`
 Future and experimental environments:
 - vulnerable machine setups
 - network simulations
 - security experiments
 
-### `tools/`
+### `Tools/`
 Scripts and utilities for automation and security workflows.
 
-### `homelab/`
+### `Homelab/`
 Infrastructure planning and future homelab architecture design.
 
 ---
