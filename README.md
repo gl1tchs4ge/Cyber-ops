@@ -1,4 +1,4 @@
-# cyber-ops
+# Cyber-ops
 
 A structured cybersecurity learning repository documenting my progression in ethical hacking, system administration, networking, and defensive security.
 
