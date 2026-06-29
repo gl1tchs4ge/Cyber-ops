@@ -42,11 +42,11 @@ Depending on the platform or challenge, writeups may include:
 
 ```text
 writeups/
-├── overthewire/
-├── tryhackme/
-├── hackthebox/
-├── portswigger/
-└── personal-labs/
+├── Overthewire/
+├── TryHackMe/
+├── HackTheBox/
+├── PortSwigger/
+└── Personal-Labs/
 ```
 
 ## Disclaimer
