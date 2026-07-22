@@ -117,17 +117,19 @@ Goal is to change:
 
 ## Exploitation
 
-Initial attempts incorrectly mixed Python and Bash syntax when generating payloads.
-
-Correct approach separates responsibilities:
-- Python for payload generation
-- Bash for execution and piping
+Initial attempts incorrectly mixed Python and Bash syntax when generating the payload. After correcting the execution context, the payload was generated with Python while Bash handled piping the payload into the vulnerable binary and kept the input stream open after spawning the shell.
 
 Final payload:
 
 ```bash
-( python3 -c 'print("A"*20 + "\xef\xbe\xad\xde")'; cat ) | ./narnia0
+(python -c 'print "A"*20+"\xef\xbe\xad\xde"'; cat) | ./narnia0
 ```
+
+The payload consists of:
+
+- `20` bytes of padding (`"A"*20`) to completely fill `buf`.
+- The bytes `\xef\xbe\xad\xde`, which represent `0xdeadbeef` in little-endian format, overwriting `val`.
+- `cat` keeps the standard input open after the shell is spawned, allowing interaction with the elevated shell.
 
 ---
 
@@ -157,14 +159,11 @@ This spawns a shell with elevated privileges, allowing access to the next level 
 ## Mistakes / Notes
 
 - Initially mixed Python and Bash syntax incorrectly.
-- Tried combining string multiplication and shell operators in one expression.
-- Learned that exploit development requires separating:
-  - payload generation
-  - transport layer (pipes)
-  - target execution
+- Learned that payload generation and execution should be treated as separate responsibilities.
+- The `cat` command was necessary to keep the spawned shell interactive after the exploit succeeded.
 
 ---
 
 ## Takeaway
 
-Exploitation is less about complex code and more about correctly structuring execution contexts and understanding how memory is laid out.
+Exploitation is less about complex code and more about understanding memory layout, data representation, and correctly structuring the execution environment required to deliver a payload.
