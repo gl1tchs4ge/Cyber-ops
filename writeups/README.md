@@ -38,17 +38,6 @@ Depending on the platform or challenge, writeups may include:
 * Networking concepts
 * General offensive security techniques
 
-## Directory Structure
-
-```text
-writeups/
-├── Overthewire/
-├── TryHackMe/
-├── HackTheBox/
-├── PortSwigger/
-└── Personal-Labs/
-```
-
 ## Disclaimer
 
 All activities documented here were performed in legal environments intended for education, training, or security research purposes.
