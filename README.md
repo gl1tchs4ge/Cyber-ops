@@ -38,13 +38,6 @@ Technical knowledge base and reference material:
 - Security theory
 - Tool references
 
-### `Writeups/`
-Hands-on cybersecurity practice:
-- `HTB/` → Hack The Box machines and > challenges 
-- `Overthewire/` → Overthewire Wargames
-- `THM/` →   Try Hack Me machines and challenges
-
- 
 ### `Labs/`
 Future and experimental environments:
 - vulnerable machine setups
